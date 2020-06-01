@@ -1,0 +1,28 @@
+﻿@model WMS.WebUI.Models.OrderEntry
+@{
+    ViewBag.Title = "PrintOrderEntry";
+}
+
+<div id="PrintDiv" style="width:70%">
+    <div style="border:1px solid black">
+        <h2 style="text-align:center;font-size:29px;color: blue;text-shadow: 1px 1px 2px;">Order Entry</h2>
+            <div id="address" style="height: 100px;border: 1px solid;width: 40%;margin-top:2%;margin-left:2%">
+                <b>WareHouse Address:</b>
+            </div>
+
+            <img src="~/images/download.jpg" style="float:right;margin-top:-11%;margin-left:2%;margin-right:2%" />
+
+            <div id="Supplieraddress" style="height: 100px;border: 1px solid;width: 40%;margin-top:2%;margin-left:2%">
+                <b>Supplier Address: @Model.SupplierAddress</b>
+            </div>
+
+            <table class="table table-striped table-bordered" style="margin-top:3%;margin-left:2%;margin-right:2%;width:97%">
+                <tr><th>Product</th><th>Number</th><th>Cost</th><th>Quantity</th><th>Entry Date</th></tr>
+                <tr><td>@Model.ProductName</td><td>@Model.ProductNumber</td><td>@Model.CostPerProduct</td><td>@Model.Quantity</td><td>@Model.EntryDate</td></tr>
+            </table>
+</div>
+    <button value="Print" class="Print-btn btn btn-info btn-shadow" style="margin-left:40%;margin-top:2%">Print <i class="fa fa-print"></i></button>
+
+</div>
+
+

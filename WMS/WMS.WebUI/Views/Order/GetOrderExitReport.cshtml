@@ -1,0 +1,55 @@
+﻿
+@{
+    ViewBag.Title = "GetOrderExitReport";
+}
+
+@using (Html.BeginForm("GetOrderExitReport", "Order"))
+{
+    @Html.AntiForgeryToken()
+
+<div class="form-horizontal">
+    <h4 class="page-title">
+        <i class="glyphicon glyphicon-plus"></i>
+        Order Entry
+    </h4>
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+    <div class="form-group">
+        @Html.Label("FromDate", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            <div class="input-group date">
+                <div class="input-group-addon">
+                    <i class="fa fa-calendar"></i>
+                </div>
+                @Html.Editor("FromDate", new { htmlAttributes = new { @class = "form-control pull-right", @id = "datepicker" ,@required = "required" } })
+            </div>
+        </div>
+    </div>
+
+
+    <div class="form-group">
+        @Html.Label("ToDate", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            <div class="input-group date">
+                <div class="input-group-addon">
+                    <i class="fa fa-calendar"></i>
+                </div>
+                @Html.Editor("ToDate", new { htmlAttributes = new { @class = "form-control pull-right", @id = "datepicker1", @required = "required" } })
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <a href="@Url.Action("GetOrderExit", "Order")" class="btn btn-info btn-shadow">
+                Back to List
+                <span class="glyphicon glyphicon-backward" aria-hidden="true"></span>
+            </a>
+            <button type="submit" value="Create" class="btn btn-success btn-shadow">
+                <i class="fa fa-save"></i> Get Report
+            </button>
+        </div>
+    </div>
+</div>
+}

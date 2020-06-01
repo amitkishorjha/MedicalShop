@@ -1,0 +1,90 @@
+﻿@model WMS.WebUI.Models.OrderExit
+
+@{
+    ViewBag.Title = "EditExit";
+}
+
+<ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Order</a></li>
+    <li class="breadcrumb-item active">Order Entry</li>
+</ol>
+<hr />
+<h3 class="page-title">
+    Manage Oders exit <i class="fa fa-location-arrow"></i>
+</h3>
+<hr />
+@using (Html.BeginForm("EditExit", "Order"))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h4 class="page-title">
+            <i class="glyphicon glyphicon-edit"></i>
+            Order exit
+        </h4>
+        <hr />
+        @Html.ValidationMessage("", new { @class = "text-danger" })
+        @Html.HiddenFor(x => x.OrderExitId)
+        <div class="form-group">
+            @Html.LabelFor(model => model.Client.Name, "Order From", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.ClientId, new SelectList(ViewBag.Clients, "UniqueId", "Name", Model.ClientId)
+                    , "-- select Supplier --", new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.Client.UniqueId, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Product.Name, "Product Name", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.ProductId, new SelectList(ViewBag.Products, "UniqueId", "Name", Model.ProductId), "-- select product --",
+                    new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.Product.UniqueId, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.orderExit.Quantity, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Quantity, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.orderExit.Quantity, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.orderExit.Cost, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Cost, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.orderExit.Cost, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.orderExit.ExitDate, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <div class="input-group date">
+                    <div class="input-group-addon">
+                        <i class="fa fa-calendar"></i>
+                    </div>
+                    @Html.TextBoxFor(model => model.ExitDate, Model.ExitDate.ToString("MM-dd-yyyy"), new { @class = "form-control pull-right", @id = "datepicker" })
+                </div>
+                @Html.ValidationMessageFor(model => model.ExitDate, "", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <a href="@Url.Action("GetOrderExit", "Order")" class="btn btn-info btn-shadow">
+                    Back to List
+                    <span class="glyphicon glyphicon-backward" aria-hidden="true"></span>
+                </a>
+                <button type="submit" value="Create" class="btn btn-success btn-shadow">
+                    <i class="fa fa-save"></i> Save
+                </button>
+            </div>
+        </div>
+    </div>
+}
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+

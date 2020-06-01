@@ -1,0 +1,90 @@
+﻿@model WMS.Models.Product
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="@Url.Action("Index","Products")">Product</a></li>
+    <li class="breadcrumb-item active">Details</li>
+</ol>
+<hr />
+
+<div>
+    <h4 class="page-title">
+        <i class="glyphicon glyphicon-save"></i>
+        Product
+    </h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Number)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Number)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.modelNo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.modelNo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ImageUrl)
+        </dt>
+
+        <dd>
+            <img style="height:100px;width:100px;" src="~/Uploads/Product/@Model.ImagePath.Substring(Model.ImagePath.LastIndexOf('\\'))" />
+        </dd>
+
+        @if (@Model.ImagePath1 != null)
+    {
+        <dt>
+            @Html.DisplayNameFor(model => model.ImageUrl1)
+        </dt>
+
+        <dd>
+            <img style="height:100px;width:100px;" src="~/Uploads/Product/@Model.ImagePath1.Substring(Model.ImagePath1.LastIndexOf('\\'))" />
+        </dd>
+}
+
+    </dl>
+</div>
+<p>
+    <a href="@Url.Action("Index", "Products")" class="btn btn-info btn-shadow">
+        Back to List
+        <span class="glyphicon glyphicon-backward" aria-hidden="true"></span>
+    </a>
+    <a href="@Url.Action("Edit", "Products")?UniqueId=@Model.UniqueId" class="btn btn-warning btn-shadow">
+        Edit
+        <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+    </a>
+
+</p>

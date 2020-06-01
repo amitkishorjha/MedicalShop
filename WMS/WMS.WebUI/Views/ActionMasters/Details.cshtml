@@ -1,0 +1,64 @@
+﻿@model WMS.Models.ActionMaster
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="@Url.Action("Index","ActionMasters")">Action</a></li>
+    <li class="breadcrumb-item active">Details</li>
+</ol>
+<hr />
+
+<div>
+    <h4 class="page-title">
+        <i class="glyphicon glyphicon-save"></i>
+        Action
+    </h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FullActionName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FullActionName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ControllerName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ControllerName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AccessCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AccessCode)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    <a href="@Url.Action("Index", "ActionMasters")" class="btn btn-info btn-shadow">
+        Back to List
+        <span class="glyphicon glyphicon-backward" aria-hidden="true"></span>
+    </a>
+    <a href="@Url.Action("Edit", "ActionMasters")?UniqueId=@Model.UniqueId" class="btn btn-warning btn-shadow">
+        Edit
+        <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+    </a>
+
+</p>

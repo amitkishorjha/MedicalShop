@@ -1,0 +1,88 @@
+﻿@model IEnumerable<WMS.WebUI.Models.UnitViewModel>
+
+@{
+    ViewBag.Title = "GetUnitProducts";
+}
+
+<ol class="breadcrumb">
+    <li class="breadcrumb-item active"><a href="#">Product Details</a></li>
+</ol>
+<hr />
+<a href="#">
+    <h2 class="page-title" style="color:cornflowerblue">
+        <i class="fa fa-home"></i> - <b>@Model.ElementAt(0).UnitName Unit</b>
+    </h2>
+</a>
+<hr />
+
+<table id="ProductsInUnit" class="table table-striped table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>
+                Image
+            </th>
+            <th>
+                Product
+            </th>
+            <th>
+                Serial No
+            </th>
+            <th>
+                Model No
+            </th>
+            <th>
+                Category
+            </th>
+            <th>
+                Quantity
+            </th>
+            <th>
+                Price
+            </th>
+            <th>
+                Description
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model.ElementAt(0).ProductName != null)
+        {
+            foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        <img style="height:65px;width:100px;" src="@item.ImageUrl" />
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ProductName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.SerialNo)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.modelNo)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Category)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Quanitiy)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Price)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Description)
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+@section scripts{
+    <script>
+        $(document).ready(function () {
+            $('#ProductsInUnit').DataTable();
+        });
+    </script>
+}

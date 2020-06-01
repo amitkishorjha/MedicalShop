@@ -1,0 +1,116 @@
+﻿@model WMS.WebUI.Models.RoleActionMappings
+
+@{
+    ViewBag.Title = "RoleActionMapping";
+}
+
+<ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">User</a></li>
+    <li class="breadcrumb-item active">Role Mapping</li>
+</ol>
+<hr />
+<h3 class="page-title">
+    Manage Role <i class="fa fa-location-arrow"></i> Action mapping
+</h3>
+<a href="#">
+    <h2 class="page-title" style="color:cornflowerblue">
+        <i class="fa fa-user-secret"></i> - <b>@Model.RoleName</b>
+    </h2>
+</a>
+<hr />
+@using (Html.BeginForm("RoleActionMapping", "RoleMaster"))
+{
+    @Html.AntiForgeryToken()
+    @Html.Hidden("RoleId", Model.RoleId)
+
+    <table id="Action" class="table table-striped table-bordered table-hover">
+        <thead>
+            <tr>
+                <th style="width:80px;">
+                    <input type="checkbox" id="md_checkbox" class="chk-col-red Action-selectAll">
+                    <label for="md_checkbox" style="margin-left:-7px">All</label>
+                </th>
+                <th>
+                    Action Name
+                </th>
+                <th>
+                    Controller Name
+                </th>
+                <th>
+                    Access Code
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Action)
+            {
+                <tr>
+                    <td>
+                        @if (Model.RoleActionMapping.Select(x => x.ActionMasterId).Contains(item.UniqueId))
+                        {
+                            <input type="checkbox" id="md_checkbox_@item.UniqueId" name="ActionId" value="@item.UniqueId" checked class="chk-col-red ActionId">
+                            <label for="md_checkbox_@item.UniqueId"></label>
+                        }
+                        else
+                        {
+                            <input type="checkbox" id="md_checkbox_@item.UniqueId" name="ActionId" value="@item.UniqueId" class="chk-col-red ActionId">
+                            <label for="md_checkbox_@item.UniqueId"></label>
+                        }
+                        <input type="hidden" class="UnMap_@item.UniqueId" value="" name="UnMap" />
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FullActionName)
+                    </td>
+                     <td>
+                        @Html.DisplayFor(modelItem => item.ControllerName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.AccessCode)
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <p>
+        <a href="@Url.Action("Index", "RoleMaster")" class="btn btn-info btn-shadow">
+            Back to List
+            <span class="glyphicon glyphicon-backward" aria-hidden="true"></span>
+        </a>
+        <button type="submit" value="Map" class="btn btn-warning btn-shadow">
+            <i class="fa fa-location-arrow"></i> Map
+        </button>
+    </p>
+}
+@section scripts{
+    <script>
+        $(document).ready(function () {
+            $('#Action').DataTable();
+
+            $(".ActionId").click(function () {
+                if ($("#md_checkbox_" + $(this).val()).prop("checked") == false) {
+                    $(".UnMap_" + $(this).val()).val($(this).val());
+                } else {
+                    $(".UnMap_" + $(this).val()).val("");
+                }
+            });
+
+            $(".Action-selectAll").click(function () {
+                if ($(this).prop('checked') == true) {
+                    $(".ActionId").each(function () {
+                        $(".UnMap_" + $(this).val()).val("");
+                    });
+                    $(".ActionId").prop("checked", "checked");
+                } else {
+                    $(".ActionId").each(function () {
+                        $(".UnMap_" + $(this).val()).val($(this).val());
+                    });
+                    $(".ActionId").prop("checked", false);
+                }
+            });
+        });
+    </script>
+}
+
+
+

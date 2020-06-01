@@ -1,0 +1,798 @@
+﻿@model IEnumerable<WMS.WebUI.Models.UnitViewModel>
+@{
+    ViewBag.Title = "WareHouseLayout";
+    int index = 0;
+}
+
+
+<h2 style="text-align:center;font-size:40px;color: blue;text-shadow: 1px 1px 2px;margin-top:-1%"><img src="~/images/download.jpg" style="height:100px;" /> Warehouse Top Layout</h2>
+<div style="border:2px solid black;height: 450px;
+    width: 80%;
+    text-align: center;
+    margin-left: 3%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);">
+    <div style="border-right:2px solid black;border-bottom:1px solid black;height: 350px;font-weight: bold;
+    font-size: 16px;
+    width: 85%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);color:brown;background-color:#f6f6ee">
+        Storage area
+        <div style="border:2px solid black;height: 19px;margin-top:-2px;margin-left:10px;
+    width: 45%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);">
+            <div IsHaveProduct="@Model.ElementAt(0).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(0).ProductName" UnitId="@Model.ElementAt(0).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(1).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(1).ProductName" UnitId="@Model.ElementAt(1).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(2).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(2).ProductName" UnitId="@Model.ElementAt(2).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(3).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(3).ProductName" UnitId="@Model.ElementAt(3).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(4).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(4).ProductName" UnitId="@Model.ElementAt(4).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(5).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(5).ProductName" UnitId="@Model.ElementAt(5).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(6).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(6).ProductName" UnitId="@Model.ElementAt(6).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(7).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(7).ProductName" UnitId="@Model.ElementAt(7).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(8).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(8).ProductName" UnitId="@Model.ElementAt(8).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(9).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(9).ProductName" UnitId="@Model.ElementAt(9).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(10).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(10).ProductName" UnitId="@Model.ElementAt(10).UnitId" class="Units" style="border-left:2px solid black;width:10%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        </div>
+
+        <div style="border:2px solid black;height: 19px;margin-top:15px;margin-left:10px;
+    width: 45%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);">
+            <div IsHaveProduct="@Model.ElementAt(11).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(11).ProductName" UnitId="@Model.ElementAt(11).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(12).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(12).ProductName" UnitId="@Model.ElementAt(12).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(13).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(13).ProductName" UnitId="@Model.ElementAt(13).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(14).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(14).ProductName" UnitId="@Model.ElementAt(14).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(15).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(15).ProductName" UnitId="@Model.ElementAt(15).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(16).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(16).ProductName" UnitId="@Model.ElementAt(16).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(17).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(17).ProductName" UnitId="@Model.ElementAt(17).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(18).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(18).ProductName" UnitId="@Model.ElementAt(18).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(19).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(19).ProductName" UnitId="@Model.ElementAt(19).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(20).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(20).ProductName" UnitId="@Model.ElementAt(20).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(21).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(21).ProductName" UnitId="@Model.ElementAt(21).UnitId" class="Units" style="border-left:2px solid black;width:10%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        </div>
+        <div style="border:2px solid black;height: 19px;margin-top:2px;margin-left:10px;
+    width: 45%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);">
+            <div IsHaveProduct="@Model.ElementAt(22).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(22).ProductName" UnitId="@Model.ElementAt(22).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(23).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(23).ProductName" UnitId="@Model.ElementAt(23).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(24).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(24).ProductName" UnitId="@Model.ElementAt(24).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(25).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(25).ProductName" UnitId="@Model.ElementAt(25).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(26).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(26).ProductName" UnitId="@Model.ElementAt(26).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(27).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(27).ProductName" UnitId="@Model.ElementAt(27).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(28).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(28).ProductName" UnitId="@Model.ElementAt(28).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(29).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(29).ProductName" UnitId="@Model.ElementAt(29).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(30).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(30).ProductName" UnitId="@Model.ElementAt(30).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(31).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(31).ProductName" UnitId="@Model.ElementAt(31).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(32).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(32).ProductName" UnitId="@Model.ElementAt(32).UnitId" class="Units" style="border-left:2px solid black;width:10%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        </div>
+
+        <div style="border:2px solid black;height: 19px;margin-top:15px;margin-left:10px;
+    width: 45%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);">
+            <div IsHaveProduct="@Model.ElementAt(33).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(33).ProductName" UnitId="@Model.ElementAt(33).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(34).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(34).ProductName" UnitId="@Model.ElementAt(34).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(35).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(35).ProductName" UnitId="@Model.ElementAt(35).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(36).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(36).ProductName" UnitId="@Model.ElementAt(36).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(37).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(37).ProductName" UnitId="@Model.ElementAt(37).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(38).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(38).ProductName" UnitId="@Model.ElementAt(38).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(39).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(39).ProductName" UnitId="@Model.ElementAt(39).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(40).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(40).ProductName" UnitId="@Model.ElementAt(40).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(41).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(41).ProductName" UnitId="@Model.ElementAt(41).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(42).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(42).ProductName" UnitId="@Model.ElementAt(42).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(43).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(43).ProductName" UnitId="@Model.ElementAt(43).UnitId" class="Units" style="border-left:2px solid black;width:10%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        </div>
+        <div style="border:2px solid black;height: 19px;margin-top:2px;margin-left:10px;
+    width: 45%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);">
+            <div IsHaveProduct="@Model.ElementAt(44).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(44).ProductName" UnitId="@Model.ElementAt(44).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(45).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(45).ProductName" UnitId="@Model.ElementAt(45).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(46).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(46).ProductName" UnitId="@Model.ElementAt(46).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(47).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(47).ProductName" UnitId="@Model.ElementAt(47).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(48).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(48).ProductName" UnitId="@Model.ElementAt(48).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(49).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(49).ProductName" UnitId="@Model.ElementAt(49).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(50).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(50).ProductName" UnitId="@Model.ElementAt(50).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(51).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(51).ProductName" UnitId="@Model.ElementAt(51).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(52).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(52).ProductName" UnitId="@Model.ElementAt(52).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(53).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(53).ProductName" UnitId="@Model.ElementAt(53).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(54).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(54).ProductName" UnitId="@Model.ElementAt(54).UnitId" class="Units" style="border-left:2px solid black;width:10%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+
+        </div>
+
+        <div style="border:2px solid black;height: 19px;margin-top:15px;margin-left:10px;
+    width: 45%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);">
+            <div IsHaveProduct="@Model.ElementAt(55).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(55).ProductName" UnitId="@Model.ElementAt(55).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(56).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(56).ProductName" UnitId="@Model.ElementAt(56).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(57).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(57).ProductName" UnitId="@Model.ElementAt(57).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(58).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(58).ProductName" UnitId="@Model.ElementAt(58).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(59).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(59).ProductName" UnitId="@Model.ElementAt(59).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(60).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(60).ProductName" UnitId="@Model.ElementAt(60).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(61).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(61).ProductName" UnitId="@Model.ElementAt(61).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(62).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(62).ProductName" UnitId="@Model.ElementAt(62).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(63).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(63).ProductName" UnitId="@Model.ElementAt(63).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(64).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(64).ProductName" UnitId="@Model.ElementAt(64).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(65).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(65).ProductName" UnitId="@Model.ElementAt(65).UnitId" class="Units" style="border-left:2px solid black;width:10%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        </div>
+        <div style="border:2px solid black;height: 19px;margin-top:2px;margin-left:10px;
+    width: 45%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);">
+            <div IsHaveProduct="@Model.ElementAt(66).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(66).ProductName" UnitId="@Model.ElementAt(0).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(67).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(67).ProductName" UnitId="@Model.ElementAt(0).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(68).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(68).ProductName" UnitId="@Model.ElementAt(0).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(69).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(69).ProductName" UnitId="@Model.ElementAt(0).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(70).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(70).ProductName" UnitId="@Model.ElementAt(0).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(71).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(71).ProductName" UnitId="@Model.ElementAt(0).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(72).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(72).ProductName" UnitId="@Model.ElementAt(0).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(73).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(73).ProductName" UnitId="@Model.ElementAt(0).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(74).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(74).ProductName" UnitId="@Model.ElementAt(0).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(75).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(75).ProductName" UnitId="@Model.ElementAt(0).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(76).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(76).ProductName" UnitId="@Model.ElementAt(0).UnitId" class="Units" style="border-left:2px solid black;width:10%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+
+        </div>
+
+        <div style="border:2px solid black;height: 19px;margin-top:15px;margin-left:10px;
+    width: 45%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);">
+            <div IsHaveProduct="@Model.ElementAt(77).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(77).ProductName" UnitId="@Model.ElementAt(77).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(78).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(78).ProductName" UnitId="@Model.ElementAt(78).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(79).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(79).ProductName" UnitId="@Model.ElementAt(79).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(80).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(80).ProductName" UnitId="@Model.ElementAt(80).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(81).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(81).ProductName" UnitId="@Model.ElementAt(81).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(82).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(82).ProductName" UnitId="@Model.ElementAt(82).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(83).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(83).ProductName" UnitId="@Model.ElementAt(83).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(84).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(84).ProductName" UnitId="@Model.ElementAt(84).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(85).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(85).ProductName" UnitId="@Model.ElementAt(85).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(86).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(86).ProductName" UnitId="@Model.ElementAt(86).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(87).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(87).ProductName" UnitId="@Model.ElementAt(87).UnitId" class="Units" style="border-left:2px solid black;width:10%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        </div>
+        <div style="border:2px solid black;height: 19px;margin-top:2px;margin-left:10px;
+    width: 45%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);">
+            <div IsHaveProduct="@Model.ElementAt(88).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(88).ProductName" UnitId="@Model.ElementAt(0).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(89).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(89).ProductName" UnitId="@Model.ElementAt(0).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(90).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(90).ProductName" UnitId="@Model.ElementAt(0).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(91).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(91).ProductName" UnitId="@Model.ElementAt(0).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(92).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(92).ProductName" UnitId="@Model.ElementAt(0).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(93).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(93).ProductName" UnitId="@Model.ElementAt(0).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(94).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(94).ProductName" UnitId="@Model.ElementAt(0).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(95).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(95).ProductName" UnitId="@Model.ElementAt(0).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(96).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(96).ProductName" UnitId="@Model.ElementAt(0).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(97).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(97).ProductName" UnitId="@Model.ElementAt(0).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(98).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(98).ProductName" UnitId="@Model.ElementAt(0).UnitId" class="Units" style="border-left:2px solid black;width:10%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+
+        </div>
+
+        <div style="border:2px solid black;height: 19px;margin-top:15px;margin-left:10px;
+    width: 45%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);">
+            <div IsHaveProduct="@Model.ElementAt(99).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(99).ProductName" UnitId="@Model.ElementAt(99).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(100).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(100).ProductName" UnitId="@Model.ElementAt(100).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(101).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(101).ProductName" UnitId="@Model.ElementAt(101).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(102).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(102).ProductName" UnitId="@Model.ElementAt(102).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(103).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(103).ProductName" UnitId="@Model.ElementAt(103).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(104).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(104).ProductName" UnitId="@Model.ElementAt(104).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(105).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(105).ProductName" UnitId="@Model.ElementAt(105).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(106).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(106).ProductName" UnitId="@Model.ElementAt(106).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(107).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(107).ProductName" UnitId="@Model.ElementAt(107).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(108).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(108).ProductName" UnitId="@Model.ElementAt(108).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(109).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(109).ProductName" UnitId="@Model.ElementAt(109).UnitId" class="Units" style="border-left:2px solid black;width:10%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        </div>
+        <div style="border:2px solid black;height: 19px;margin-top:2px;margin-left:10px;
+    width: 45%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);">
+            <div IsHaveProduct="@Model.ElementAt(110).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(110).ProductName" UnitId="@Model.ElementAt(110).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(111).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(111).ProductName" UnitId="@Model.ElementAt(111).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(112).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(112).ProductName" UnitId="@Model.ElementAt(112).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(113).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(113).ProductName" UnitId="@Model.ElementAt(113).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(114).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(114).ProductName" UnitId="@Model.ElementAt(114).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(115).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(115).ProductName" UnitId="@Model.ElementAt(115).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(116).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(116).ProductName" UnitId="@Model.ElementAt(116).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(117).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(117).ProductName" UnitId="@Model.ElementAt(117).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(118).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(118).ProductName" UnitId="@Model.ElementAt(118).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(119).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(119).ProductName" UnitId="@Model.ElementAt(119).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(120).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(120).ProductName" UnitId="@Model.ElementAt(120).UnitId" class="Units" style="border-left:2px solid black;width:10%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+
+        </div>
+
+        <div style="border:2px solid black;height: 19px;margin-top:11px;margin-left:10px;
+    width: 45%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);">
+            <div IsHaveProduct="@Model.ElementAt(121).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(121).ProductName" UnitId="@Model.ElementAt(121).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(123).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(123).ProductName" UnitId="@Model.ElementAt(123).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(124).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(124).ProductName" UnitId="@Model.ElementAt(124).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(125).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(125).ProductName" UnitId="@Model.ElementAt(125).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(126).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(126).ProductName" UnitId="@Model.ElementAt(126).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(127).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(127).ProductName" UnitId="@Model.ElementAt(127).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(128).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(128).ProductName" UnitId="@Model.ElementAt(128).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(129).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(129).ProductName" UnitId="@Model.ElementAt(129).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(130).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(130).ProductName" UnitId="@Model.ElementAt(130).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(131).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(131).ProductName" UnitId="@Model.ElementAt(131).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(132).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(132).ProductName" UnitId="@Model.ElementAt(132).UnitId" class="Units" style="border-left:2px solid black;width:10%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        </div>
+
+        <div style="border:2px solid black;height: 19px;margin-top:-39.5%;margin-right:10px;float:right;
+    width: 45%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);">
+            <div IsHaveProduct="@Model.ElementAt(133).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(133).ProductName" UnitId="@Model.ElementAt(133).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(134).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(134).ProductName" UnitId="@Model.ElementAt(134).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(135).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(135).ProductName" UnitId="@Model.ElementAt(135).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(136).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(136).ProductName" UnitId="@Model.ElementAt(136).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(137).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(137).ProductName" UnitId="@Model.ElementAt(137).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(138).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(138).ProductName" UnitId="@Model.ElementAt(138).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(139).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(139).ProductName" UnitId="@Model.ElementAt(139).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(140).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(140).ProductName" UnitId="@Model.ElementAt(140).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(141).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(141).ProductName" UnitId="@Model.ElementAt(141).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(142).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(142).ProductName" UnitId="@Model.ElementAt(142).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(143).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(143).ProductName" UnitId="@Model.ElementAt(143).UnitId" class="Units" style="border-left:2px solid black;width:10%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        </div>
+
+        <div style="border:2px solid black;height: 19px;margin-top:-35.5%;margin-right:10px;float:right;
+    width: 45%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);">
+            <div IsHaveProduct="@Model.ElementAt(144).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(144).ProductName" UnitId="@Model.ElementAt(144).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(145).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(145).ProductName" UnitId="@Model.ElementAt(145).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(146).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(146).ProductName" UnitId="@Model.ElementAt(146).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(147).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(147).ProductName" UnitId="@Model.ElementAt(147).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(148).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(148).ProductName" UnitId="@Model.ElementAt(148).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(149).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(149).ProductName" UnitId="@Model.ElementAt(149).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(150).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(150).ProductName" UnitId="@Model.ElementAt(150).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(151).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(151).ProductName" UnitId="@Model.ElementAt(151).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(152).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(152).ProductName" UnitId="@Model.ElementAt(152).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(153).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(153).ProductName" UnitId="@Model.ElementAt(153).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(154).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(154).ProductName" UnitId="@Model.ElementAt(154).UnitId" class="Units" style="border-left:2px solid black;width:10%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        </div>
+        <div style="border:2px solid black;height: 19px;margin-top:-32.8%;margin-right:10px;float:right;
+    width: 45%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);">
+            <div IsHaveProduct="@Model.ElementAt(155).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(155).ProductName" UnitId="@Model.ElementAt(155).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(156).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(156).ProductName" UnitId="@Model.ElementAt(156).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(157).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(157).ProductName" UnitId="@Model.ElementAt(157).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(158).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(158).ProductName" UnitId="@Model.ElementAt(158).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(159).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(159).ProductName" UnitId="@Model.ElementAt(159).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(160).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(160).ProductName" UnitId="@Model.ElementAt(160).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(161).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(161).ProductName" UnitId="@Model.ElementAt(161).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(162).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(162).ProductName" UnitId="@Model.ElementAt(162).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(163).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(163).ProductName" UnitId="@Model.ElementAt(163).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(164).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(164).ProductName" UnitId="@Model.ElementAt(164).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(165).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(165).ProductName" UnitId="@Model.ElementAt(165).UnitId" class="Units" style="border-left:2px solid black;width:10%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        </div>
+
+        <div style="border:2px solid black;height: 19px;margin-top:-28.6%;margin-right:10px;float:right;
+    width: 45%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);">
+            <div IsHaveProduct="@Model.ElementAt(166).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(166).ProductName" UnitId="@Model.ElementAt(166).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(167).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(167).ProductName" UnitId="@Model.ElementAt(167).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(168).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(168).ProductName" UnitId="@Model.ElementAt(168).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(169).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(169).ProductName" UnitId="@Model.ElementAt(169).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(170).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(170).ProductName" UnitId="@Model.ElementAt(170).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(171).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(171).ProductName" UnitId="@Model.ElementAt(171).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(172).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(172).ProductName" UnitId="@Model.ElementAt(172).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(173).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(173).ProductName" UnitId="@Model.ElementAt(173).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(174).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(174).ProductName" UnitId="@Model.ElementAt(174).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(175).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(175).ProductName" UnitId="@Model.ElementAt(175).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(176).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(176).ProductName" UnitId="@Model.ElementAt(176).UnitId" class="Units" style="border-left:2px solid black;width:10%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        </div>
+        <div style="border:2px solid black;height: 19px;margin-top:-25.94%;margin-right:10px;float:right;
+    width: 45%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);">
+            <div IsHaveProduct="@Model.ElementAt(177).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(177).ProductName" UnitId="@Model.ElementAt(177).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(178).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(178).ProductName" UnitId="@Model.ElementAt(178).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(179).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(179).ProductName" UnitId="@Model.ElementAt(179).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(180).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(180).ProductName" UnitId="@Model.ElementAt(180).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(181).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(181).ProductName" UnitId="@Model.ElementAt(181).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(182).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(182).ProductName" UnitId="@Model.ElementAt(182).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(183).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(183).ProductName" UnitId="@Model.ElementAt(183).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(184).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(184).ProductName" UnitId="@Model.ElementAt(184).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(185).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(185).ProductName" UnitId="@Model.ElementAt(185).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(186).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(186).ProductName" UnitId="@Model.ElementAt(186).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(187).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(187).ProductName" UnitId="@Model.ElementAt(187).UnitId" class="Units" style="border-left:2px solid black;width:10%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        </div>
+
+        <div style="border:2px solid black;height: 19px;margin-top:-22%;margin-right:10px;float:right;
+    width: 45%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);">
+            <div IsHaveProduct="@Model.ElementAt(188).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(188).ProductName" UnitId="@Model.ElementAt(0).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(189).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(189).ProductName" UnitId="@Model.ElementAt(0).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(190).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(190).ProductName" UnitId="@Model.ElementAt(0).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(191).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(191).ProductName" UnitId="@Model.ElementAt(0).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(192).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(192).ProductName" UnitId="@Model.ElementAt(0).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(193).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(193).ProductName" UnitId="@Model.ElementAt(0).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(194).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(194).ProductName" UnitId="@Model.ElementAt(0).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(195).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(195).ProductName" UnitId="@Model.ElementAt(0).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(196).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(196).ProductName" UnitId="@Model.ElementAt(0).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(197).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(197).ProductName" UnitId="@Model.ElementAt(0).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(198).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(198).ProductName" UnitId="@Model.ElementAt(0).UnitId" class="Units" style="border-left:2px solid black;width:10%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        </div>
+        <div style="border:2px solid black;height: 19px;margin-top:-19.3%;margin-right:10px;float:right;
+    width: 45%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);">
+            <div IsHaveProduct="@Model.ElementAt(200).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(200).ProductName" UnitId="@Model.ElementAt(200).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(201).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(201).ProductName" UnitId="@Model.ElementAt(201).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(202).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(202).ProductName" UnitId="@Model.ElementAt(202).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(203).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(203).ProductName" UnitId="@Model.ElementAt(203).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(204).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(204).ProductName" UnitId="@Model.ElementAt(204).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(205).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(205).ProductName" UnitId="@Model.ElementAt(205).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(206).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(206).ProductName" UnitId="@Model.ElementAt(206).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(207).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(207).ProductName" UnitId="@Model.ElementAt(207).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(208).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(208).ProductName" UnitId="@Model.ElementAt(208).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(209).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(209).ProductName" UnitId="@Model.ElementAt(209).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(210).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(210).ProductName" UnitId="@Model.ElementAt(210).UnitId" class="Units" style="border-left:2px solid black;width:10%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        </div>
+
+        <div style="border:2px solid black;height: 19px;margin-top:-15%;margin-right:10px;float:right;
+    width: 45%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);">
+            <div IsHaveProduct="@Model.ElementAt(211).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(211).ProductName" UnitId="@Model.ElementAt(211).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(212).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(212).ProductName" UnitId="@Model.ElementAt(212).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(213).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(213).ProductName" UnitId="@Model.ElementAt(213).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(214).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(214).ProductName" UnitId="@Model.ElementAt(214).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(215).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(215).ProductName" UnitId="@Model.ElementAt(215).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(216).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(216).ProductName" UnitId="@Model.ElementAt(216).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(217).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(217).ProductName" UnitId="@Model.ElementAt(217).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(218).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(218).ProductName" UnitId="@Model.ElementAt(218).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(219).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(219).ProductName" UnitId="@Model.ElementAt(219).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(220).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(220).ProductName" UnitId="@Model.ElementAt(220).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(221).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(221).ProductName" UnitId="@Model.ElementAt(221).UnitId" class="Units" style="border-left:2px solid black;width:10%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        </div>
+        <div style="border:2px solid black;height: 19px;margin-top:-12.5%;margin-right:10px;float:right;
+    width: 45%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);">
+            <div IsHaveProduct="@Model.ElementAt(222).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(222).ProductName" UnitId="@Model.ElementAt(222).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(223).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(223).ProductName" UnitId="@Model.ElementAt(223).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(224).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(224).ProductName" UnitId="@Model.ElementAt(224).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(225).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(225).ProductName" UnitId="@Model.ElementAt(225).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(226).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(226).ProductName" UnitId="@Model.ElementAt(226).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(227).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(227).ProductName" UnitId="@Model.ElementAt(227).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(228).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(228).ProductName" UnitId="@Model.ElementAt(228).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(229).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(229).ProductName" UnitId="@Model.ElementAt(229).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(230).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(230).ProductName" UnitId="@Model.ElementAt(230).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(231).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(231).ProductName" UnitId="@Model.ElementAt(231).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(232).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(232).ProductName" UnitId="@Model.ElementAt(232).UnitId" class="Units" style="border-left:2px solid black;width:10%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        </div>
+
+        <div style="border:2px solid black;height: 19px;margin-top:-8.5%;margin-right:10px;float:right;
+    width: 45%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);">
+            <div IsHaveProduct="@Model.ElementAt(233).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(233).ProductName" UnitId="@Model.ElementAt(233).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(234).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(234).ProductName" UnitId="@Model.ElementAt(234).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(235).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(235).ProductName" UnitId="@Model.ElementAt(235).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(236).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(236).ProductName" UnitId="@Model.ElementAt(236).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(237).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(237).ProductName" UnitId="@Model.ElementAt(237).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(238).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(238).ProductName" UnitId="@Model.ElementAt(238).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(239).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(239).ProductName" UnitId="@Model.ElementAt(239).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(240).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(240).ProductName" UnitId="@Model.ElementAt(240).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(241).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(241).ProductName" UnitId="@Model.ElementAt(241).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(242).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(242).ProductName" UnitId="@Model.ElementAt(242).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(243).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(243).ProductName" UnitId="@Model.ElementAt(243).UnitId" class="Units" style="border-left:2px solid black;width:10%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        </div>
+        <div style="border:2px solid black;height: 19px;margin-top:-5.9%;margin-right:10px;float:right;
+    width: 45%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);">
+            <div IsHaveProduct="@Model.ElementAt(244).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(244).ProductName" UnitId="@Model.ElementAt(244).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(245).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(245).ProductName" UnitId="@Model.ElementAt(245).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(246).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(246).ProductName" UnitId="@Model.ElementAt(246).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(247).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(247).ProductName" UnitId="@Model.ElementAt(247).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(248).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(248).ProductName" UnitId="@Model.ElementAt(248).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(249).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(249).ProductName" UnitId="@Model.ElementAt(249).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(250).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(250).ProductName" UnitId="@Model.ElementAt(250).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(251).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(251).ProductName" UnitId="@Model.ElementAt(251).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(252).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(252).ProductName" UnitId="@Model.ElementAt(252).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(253).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(253).ProductName" UnitId="@Model.ElementAt(253).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(254).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(254).ProductName" UnitId="@Model.ElementAt(254).UnitId" class="Units" style="border-left:2px solid black;width:10%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        </div>
+
+        <div style="border:2px solid black;height: 19px;margin-top:-2.3%;margin-right:10px;float:right;
+    width: 45%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);">
+            <div IsHaveProduct="@Model.ElementAt(255).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(255).ProductName" UnitId="@Model.ElementAt(255).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(256).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(256).ProductName" UnitId="@Model.ElementAt(256).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(257).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(257).ProductName" UnitId="@Model.ElementAt(257).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(258).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(258).ProductName" UnitId="@Model.ElementAt(258).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(259).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(259).ProductName" UnitId="@Model.ElementAt(259).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(260).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(260).ProductName" UnitId="@Model.ElementAt(260).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(261).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(261).ProductName" UnitId="@Model.ElementAt(261).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(262).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(262).ProductName" UnitId="@Model.ElementAt(262).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(263).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(263).ProductName" UnitId="@Model.ElementAt(263).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(264).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(264).ProductName" UnitId="@Model.ElementAt(264).UnitId" class="Units" style="border-left:2px solid black;width:9%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div IsHaveProduct="@Model.ElementAt(265).IsHaveProduct" data-toggle="popover" data-trigger="hover" data-content="@Model.ElementAt(265).ProductName" UnitId="@Model.ElementAt(265).UnitId" class="Units" style="border-left:2px solid black;width:10%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        </div>
+    </div>
+    <div style="border-bottom:1px solid black;height: 175px;font-weight: bold;
+    font-size: 16px;
+    width: 15%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);float:right;margin-top:-350px;color:red;background-color:#ffcccc">
+        Entry area
+    </div>
+    <div style="height: 175px;font-weight: bold;
+    font-size: 16px;
+    width: 15%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);float:right;margin-top:-175px;color:red;background-color:#ffcccc">
+        Exit area
+    </div>
+
+    <div style="height: 150px;border:2px solid black;
+    width: 3.8%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);float:right;margin-top:-251px;background-color:#e6ffe6">
+
+    </div>
+
+    <div style="border-right:2px solid black;border-top:1px solid black;height: 97px;font-weight: bold;
+    font-size: 16px;
+    width: 75%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);color:blue;background-color:#ffffcc">
+        Order picking area
+        <div style="border:2px solid black;height: 19px;margin-top:-2px;margin-left:10px;
+    width: 45%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);">
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+
+        </div>
+        <div style="border:2px solid black;height: 19px;margin-top:2px;margin-left:10px;
+    width: 45%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);">
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+
+        </div>
+        <div style="border:2px solid black;height: 19px;margin-top:2px;margin-left:10px;
+    width: 45%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);">
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+
+        </div>
+
+        <div style="border:2px solid black;height: 19px;margin-top:-60px;margin-right:10px;float:right;
+    width: 45%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);">
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+
+        </div>
+        <div style="border:2px solid black;height: 19px;margin-top:-39px;margin-right:10px;float:right;
+    width: 45%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);">
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+
+        </div>
+        <div style="border:2px solid black;height: 19px;margin-top:-17px;margin-right:10px;float:right;
+    width: 45%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);">
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+            <div style="border-left:2px solid black;width:5%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+
+        </div>
+    </div>
+
+    <div style="border-top:2px solid black;height: 98px;font-weight: bold;
+    font-size: 16px;
+    width: 25%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);float:right;margin-top:-98px;color:deeppink;background-color:#fff2e6">
+        After order picking buffer area
+        <div style="border:2px solid black;height: 45px;margin-top:11%;
+    width: 19%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);float:right"></div>
+    </div>
+</div>
+<div style="border:2px solid black;float: right;
+    margin-top: -450px;
+    border: 2px solid black;
+    height: 350px;
+    width: 10%;
+    margin-right: 6%;
+    box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);background-color:#ecf9f2">
+
+    <div style="border:2px solid black;height: 19px;margin-top: 9px;
+    margin-right: 13px;
+    float: right;
+    width: 90%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);">
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+
+    </div>
+
+    <div style="border:2px solid black;height: 19px;margin-top: 15px;
+    margin-right: 13px;
+    float: right;
+    width: 90%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);">
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+
+    </div>
+    <div style="border:2px solid black;height: 19px;margin-top: 1px;
+    margin-right: 13px;
+    float: right;
+    width: 90%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);">
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+
+    </div>
+    <div style="border:2px solid black;height: 19px;margin-top: 15px;
+    margin-right: 13px;
+    float: right;
+    width: 90%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);">
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+
+    </div>
+    <div style="border:2px solid black;height: 19px;margin-top: 1px;
+    margin-right: 13px;
+    float: right;
+    width: 90%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);">
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+
+    </div>
+    <div style="border:2px solid black;height: 19px;margin-top: 15px;
+    margin-right: 13px;
+    float: right;
+    width: 90%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);">
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+
+    </div>
+    <div style="border:2px solid black;height: 19px;margin-top: 1px;
+    margin-right: 13px;
+    float: right;
+    width: 90%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);">
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+
+    </div>
+    <div style="border:2px solid black;height: 19px;margin-top: 15px;
+    margin-right: 13px;
+    float: right;
+    width: 90%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);">
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+
+    </div>
+    <div style="border:2px solid black;height: 19px;margin-top: 1px;
+    margin-right: 13px;
+    float: right;
+    width: 90%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);">
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+
+    </div>
+    <div style="border:2px solid black;height: 19px;margin-top: 15px;
+    margin-right: 13px;
+    float: right;
+    width: 90%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);">
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+
+    </div>
+    <div style="border:2px solid black;height: 19px;margin-top: 1px;
+    margin-right: 13px;
+    float: right;
+    width: 90%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);">
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+
+    </div>
+
+    <div style="border:2px solid black;height: 19px;margin-top: 15px;
+    margin-right: 13px;
+    float: right;
+    width: 90%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);">
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:12%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+
+    </div>
+</div>
+<div style="border:2px solid black;float: right;
+    margin-top: -100px;
+    border: 2px solid black;
+    height: 100px;
+    width: 3%;
+    margin-right: 13%;
+    box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);background-color:#b3ffcc">
+
+    <div style="border:2px solid black;height: 19px;margin-top: 9px;
+    margin-right: 5px;
+    float: right;
+    width: 90%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);">
+        <div style="border-left:2px solid black;width:50%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:50%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+
+    </div>
+
+    <div style="border:2px solid black;height: 19px;margin-top: 15px;
+    margin-right: 6px;
+    float: right;
+    width: 90%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);">
+        <div style="border-left:2px solid black;width:50%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:50%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+
+    </div>
+    <div style="border:2px solid black;height: 19px;margin-top: 1px;
+    margin-right: 6px;
+    float: right;
+    width: 90%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);">
+        <div style="border-left:2px solid black;width:50%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+        <div style="border-left:2px solid black;width:50%;box-shadow: 0 2px 3px 2px rgba(180,180,180,.7);height:17px;float:right"></div>
+
+    </div>
+
+
+</div>
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title">Products details in unit</h4>
+            </div>
+            <div class="modal-body">
+                <p></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<script>
+        $(document).ready(function () {
+            
+            $(".Units").each(function () {
+
+                var productname = $(this).attr("ishaveproduct").split(",")[1];
+
+                $(this).attr('title', productname);
+
+                if ($(this).attr("ishaveproduct").split(",")[0] == "True") {
+                    $(this).css("background-color", "lightgray");
+                }
+            });
+
+            $('[data-toggle="popover"]').popover();
+
+            $(".Units").click(function () {
+                (window).open('@Url.Action("GetUnitProducts", "UserMasters")?UnitId=' + $(this).attr('UnitId') + '&UnitName=' + $(this).attr("data-original-title"),"_blank");
+            });
+        });
+</script>

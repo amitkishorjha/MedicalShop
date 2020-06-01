@@ -1,0 +1,99 @@
+﻿@model WMS.WebUI.Models.OrderEntry
+
+@{
+    ViewBag.Title = "OrderEntry";
+}
+
+<ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Order</a></li>
+    <li class="breadcrumb-item active">Order Entry</li>
+</ol>
+<hr />
+<h3 class="page-title">
+    Manage Oders entry <i class="fa fa-location-arrow"></i>
+</h3>
+<hr />
+@using (Html.BeginForm("Edit", "Order"))
+{
+    @Html.AntiForgeryToken()
+
+<div class="form-horizontal">
+    <h4 class="page-title">
+        <i class="glyphicon glyphicon-edit"></i>
+        Order Entry
+    </h4>
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    @Html.HiddenFor(x => x.StockId)
+    <div class="form-group">
+        @Html.LabelFor(model => model.Supplier.Name, "Order From", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.DropDownListFor(model => model.SupplierId, new SelectList(ViewBag.Suppliers, "UniqueId", "Name", Model.SupplierId)
+                , "-- select Supplier --", new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.Supplier.UniqueId, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Product.Name, "Product Name", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.DropDownListFor(model => model.ProductId, new SelectList(ViewBag.Products, "UniqueId", "Name", Model.ProductId), "-- select product --",
+                new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.Product.UniqueId, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Stock.Quatity, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Quantity, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.Stock.Quatity, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Stock.CostPerProduct, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.CostPerProduct, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.Stock.CostPerProduct, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.EntryDate, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            <div class="input-group date">
+                <div class="input-group-addon">
+                    <i class="fa fa-calendar"></i>
+                </div>
+                @Html.TextBoxFor(model => model.EntryDate,Model.EntryDate.ToString("MM-dd-yyyy"), new { @class = "form-control pull-right", @id = "datepicker" })
+            </div>
+            @Html.ValidationMessageFor(model => model.EntryDate, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Unit.Name, "Unit Name", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.DropDownListFor(model => model.UnitId, new SelectList(ViewBag.Units, "UniqueId", "Name", Model.UnitId)
+                , "-- select unit --", new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.Unit.UniqueId, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <a href="@Url.Action("GetOrderEntry", "Order")" class="btn btn-info btn-shadow">
+                Back to List
+                <span class="glyphicon glyphicon-backward" aria-hidden="true"></span>
+            </a>
+            <button type="submit" value="Create" class="btn btn-success btn-shadow">
+                <i class="fa fa-save"></i> Save
+            </button>
+        </div>
+    </div>
+</div>
+}
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

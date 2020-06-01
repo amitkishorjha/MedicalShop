@@ -1,0 +1,106 @@
+﻿@model IEnumerable<WMS.Models.Supplier>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Master</a></li>
+    <li class="breadcrumb-item active">Supplier</li>
+</ol>
+<hr />
+<h2 class="page-title">
+    Manage Suppliers
+</h2>
+<p>
+    <a href="@Url.Action("Create", "Suppliers")" class="btn btn-success btn-shadow">
+        Create
+        <span class="fa fa-plus-circle" aria-hidden="true"></span>
+    </a>
+</p>
+
+<table id="Supplier" class="table table-striped table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Surname)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Company)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Phone1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Phone2)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Address)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Surname)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Company)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Phone1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Phone2)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Address)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+
+            <td>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger">Action</button>
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
+                        <span class="caret"></span>
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="@Url.Action("Edit","Suppliers")?UniqueId=@item.UniqueId">Edit</a>
+                        <a class="dropdown-item" href="@Url.Action("Details","Suppliers")?UniqueId=@item.UniqueId">Details</a>
+                        <a class="dropdown-item" href="@Url.Action("Delete","Suppliers")?UniqueId=@item.UniqueId">Delete</a>
+                    </div>
+                </div>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+@section scripts{
+    <script>
+        $(document).ready(function () {
+            $('#Supplier').DataTable();
+        });
+    </script>
+}

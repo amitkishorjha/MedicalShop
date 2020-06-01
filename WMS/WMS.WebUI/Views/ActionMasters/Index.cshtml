@@ -1,0 +1,80 @@
+﻿@model IEnumerable<WMS.Models.ActionMaster>
+
+@{
+    ViewBag.Title = "Index";
+}
+<ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Master</a></li>
+    <li class="breadcrumb-item active">Action</li>
+</ol>
+<hr />
+<h2 class="page-title">
+    Manage Actions
+</h2>
+<p>
+    <a href="@Url.Action("Create", "ActionMasters")" class="btn btn-success btn-shadow">
+        Create
+        <span class="fa fa-plus-circle" aria-hidden="true"></span>
+    </a>
+</p>
+<table id="ActionMaster" class="table table-striped table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FullActionName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ControllerName)
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.AccessCode)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FullActionName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ControllerName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AccessCode)
+                </td>
+                <td>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-danger">Action</button>
+                        <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
+                            <span class="caret"></span>
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="@Url.Action("Edit","ActionMasters")?UniqueId=@item.UniqueId">Edit</a>
+                            <a class="dropdown-item" href="@Url.Action("Details","ActionMasters")?UniqueId=@item.UniqueId">Details</a>
+                            <a class="dropdown-item" href="@Url.Action("Delete","ActionMasters")?UniqueId=@item.UniqueId">Delete</a>
+                        </div>
+                    </div>
+                    
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+@section scripts{
+    <script>
+        $(document).ready(function () {
+            $('#ActionMaster').DataTable();
+        });
+    </script>
+}
